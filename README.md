@@ -6,12 +6,7 @@ KeepItSimple! is a lightweight and versatile CSS library designed to provide eas
 
 # Getting Started
 Installation
-To use KeepItSimple, you can include the following CDN link in the <head> of your HTML file:
-
-html
-Copy code
-<link rel="stylesheet" href="https://path/to/your/css/library.css">
-Alternatively, you can download the CSS file and host it locally in your project.
+To use KeepItSimple, you can download the CSS file and host it locally in your project.
 
 Usage
 Basic Styling
