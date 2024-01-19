@@ -1,19 +1,14 @@
-# Your CSS Library Name
+# KeepItSimple
 
 ## Introduction
 
-**Your CSS Library Name** is a lightweight and versatile CSS library designed to provide easy styling for web development projects. With a focus on simplicity and flexibility, it offers a set of styles that can be easily integrated into your HTML structure.
+**Keep It Simple** is a lightweight and versatile CSS library designed to provide easy styling for web development projects. With a focus on simplicity and flexibility, it offers a set of styles that can be easily integrated into your HTML structure.
 
 ## Getting Started
 
 ### Installation
 
-To use **Your CSS Library Name**, you can include the following CDN link in the `<head>` of your HTML file:
-
-```html
-<link rel="stylesheet" href="https://path/to/your/css/library.css">
-```
-Alternatively, you can download the CSS file and host it locally in your project.
+To use **Keep It Simple Framework**, you can download the CSS file and host it locally in your project.
 
 ## Usage
 ### Basic Styling
@@ -36,11 +31,16 @@ To create a fixed navbar, use the following HTML structure:
 ### Fonts
 Choose from a variety of font styles for your text:
 ```
-TypeScripter font: <p class="typescripter">Your text here.</p>
-Gothic font: <p class="gothic">Your text here.</p>
-Modern font: <p class="modern">Your text here.</p>
-Lucida font: <p class="lucida">Your text here.</p>
-Traditional font: <p class="traditional">Your text here.</p>
+TypeScripter font:
+<p class="typescripter">Your text here.</p>
+Gothic font:
+<p class="gothic">Your text here.</p>
+Modern font:
+<p class="modern">Your text here.</p>
+Lucida font:
+<p class="lucida">Your text here.</p>
+Traditional font:
+<p class="traditional">Your text here.</p>
 ```
 ## Layout
 ### Container
