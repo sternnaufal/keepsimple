@@ -1,29 +1,113 @@
 <!DOCTYPE html>
-<html>
-    <head><link rel="stylesheet" href="style.css"></head>
-    <body class="dark">
-        <div class="navbar-con dark">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeepItSimple Framework - Full Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <nav class="navbar-con">
         <ul>
-            <li><a class="dark" href="#">Nav1</a></li>
-            <li><a class="dark" href="#">Nav2</a></li>
-            <li><a class="dark" href="#">Nav3</a></li>
-            <li><a class="dark" href="#">Nav4</a></li></ul>
-        </div>
-        <div class="container dark traditional">
-            <div class="big dark">
-                <h1 class="dark">Keep It Simple Framework.css</h1>
-                <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis commodi aspernatur debitis ab tempora saepe! Quibusdam placeat ipsum veniam provident accusantium magni exercitationem sint, nesciunt consequatur dolore nostrum? Sed, minus.</p>
-                <p class="dark">This is my First Framework, just 2 color mode, Light and Dark. And I think this best idea.</p>
-            </div>
-            <div class="flex dark">
-                <div class="flexbox dark"><p class="dark traditional">This is Traditonal</p>
+            <li><a href="#">Home</a></li>
+            <li><a href="#components">Components</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#" id="theme-toggle">🌗 Toggle Theme</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <header class="row mb-2">
+            <div class="col">
+                <span class="badge badge-primary mb-1">Version 2.0</span>
+                <h1>KeepItSimple Framework</h1>
+                <p class="modern">A minimalist, premium CSS library for building beautiful interfaces faster. No dependencies, just pure CSS magic.</p>
+                <div class="row mt-2">
+                    <a href="#" class="btn btn-primary">Download Now</a>
+                    <a href="#" class="btn btn-outline">Read Documentation</a>
                 </div>
-                <div class="flexbox dark"><p class="dark gothic">This is Gothic</p></div>
-                <div class="flexbox dark"><p class="dark typescripter">This is Typescripter</p></div>
-                <div class="flexbox dark"><p class="dark modern">This is Modern</p></div>
-                <div class="flexbox dark"><p class="dark lucida">This is Lucida</p></div>
-                <div class="flexbox dark"><p class="dark">Documentation? <a href="">Here!</a></p></div>
             </div>
-        </div>
-    </body>
+        </header>
+
+        <!-- Alerts Section -->
+        <section id="components" class="mb-4">
+            <h2 class="mb-2">Alerts & Messages</h2>
+            <div class="alert alert-success"><strong>Success!</strong> Your changes have been saved successfully.</div>
+            <div class="alert alert-info"><strong>Heads up!</strong> There is a new update available for the core library.</div>
+            <div class="alert alert-error"><strong>Error!</strong> We couldn't connect to the server. Please try again.</div>
+        </section>
+
+        <!-- Grid & Cards -->
+        <section class="mb-4">
+            <h2 class="mb-2">Grid & Card System</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 class="traditional">Classic Style</h3>
+                    <p class="traditional">This card uses the traditional serif font preset for a more formal and elegant look.</p>
+                    <a href="#" class="btn btn-secondary btn-sm">Learn More</a>
+                </div>
+                <div class="card">
+                    <h3 class="gothic">Gothic Style</h3>
+                    <p class="gothic">Bold and striking. Perfect for headlines and modern marketing sections.</p>
+                    <a href="#" class="btn btn-secondary btn-sm">Explore</a>
+                </div>
+                <div class="card">
+                    <h3 class="typescripter">Code Ready</h3>
+                    <p class="typescripter">Mono font integrated perfectly for technical documentation and snippets.</p>
+                    <a href="#" class="btn btn-secondary btn-sm">View Source</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section id="forms" class="row">
+            <div class="col">
+                <div class="card">
+                    <h2 class="mb-2">Sign Up</h2>
+                    <form>
+                        <div class="form-group">
+                            <label class="label">Full Name</label>
+                            <input type="text" class="input" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Email Address</label>
+                            <input type="email" class="input" placeholder="you@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="label">Message (Optional)</label>
+                            <textarea class="input" rows="3" placeholder="Tell us more..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="mb-2">Why KeepItSimple?</h2>
+                <ul style="list-style: none; padding: 0;">
+                    <li class="mb-1">✅ <strong>Ultra Lightweight</strong>: Less than 5KB gzipped.</li>
+                    <li class="mb-1">✅ <strong>Zero Dependencies</strong>: No JS needed for core UI.</li>
+                    <li class="mb-1">✅ <strong>CSS Variables</strong>: Real-time customization.</li>
+                    <li class="mb-1">✅ <strong>Modern Browser Support</strong>: Built for the future.</li>
+                </ul>
+                <div class="mt-2">
+                    <span class="badge badge-primary">Flexible</span>
+                    <span class="badge badge-primary">Fast</span>
+                    <span class="badge badge-primary">Modern</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
 </html>
+

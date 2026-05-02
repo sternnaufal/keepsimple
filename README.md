@@ -1,65 +1,59 @@
-# KeepItSimple
+# KeepItSimple Framework v2.0
 
 ## Introduction
 
-**Keep It Simple** is a lightweight and versatile CSS library designed to provide easy styling for web development projects. With a focus on simplicity and flexibility, it offers a set of styles that can be easily integrated into your HTML structure.
+**KeepItSimple** is a lightweight, modern, and versatile CSS library designed for developers who value speed and clean aesthetics. Version 2.0 introduces a robust grid system, expanded UI components, and utility classes while remaining zero-dependency.
 
 ## Getting Started
 
-### Installation
-
-To use **Keep It Simple Framework**, you can download the CSS file and host it locally in your project.
-
-## Usage
-### Basic Styling
-Add the CSS classes to your HTML elements to apply basic styling:
-
+Include `style.css` in your project:
 ```html
-<div class="light">This is a light-themed element.</div>
-<div class="dark">This is a dark-themed element.</div>
+<link rel="stylesheet" href="style.css">
 ```
 
-### Navbar
-To create a fixed navbar, use the following HTML structure:
+## Core Features
 
+### 1. Advanced Theming
+Switch between light and dark modes by toggling the `.dark` class on the `<body>`.
 ```html
-<div class="navbar-con">
-  <!-- Your navbar content goes here -->
-</div>
+<body class="dark">
 ```
 
-### Fonts
-Choose from a variety of font styles for your text:
-```
-TypeScripter font:
-<p class="typescripter">Your text here.</p>
-Gothic font:
-<p class="gothic">Your text here.</p>
-Modern font:
-<p class="modern">Your text here.</p>
-Lucida font:
-<p class="lucida">Your text here.</p>
-Traditional font:
-<p class="traditional">Your text here.</p>
-```
-## Layout
-### Container
-Create a flexible container for your content:
+### 2. Layout & Grid System
+- **`.container`**: Max-width 1100px centered wrapper.
+- **`.grid`**: Automatic responsive grid (min 280px per item).
+- **`.row` & `.col`**: Traditional flex-based layout system.
 
-```html
-<div class="container">
-  <!-- Your content goes here -->
-</div>
-```
-### Responsive Layout
-Utilize the flexbox and grid components for responsive design:
+### 3. UI Components
+- **Buttons**: `.btn-primary`, `.btn-secondary`, `.btn-outline`.
+- **Cards**: `.card` (includes hover effects).
+- **Alerts**: `.alert-success`, `.alert-error`, `.alert-info`.
+- **Forms**: `.form-group`, `.label`, `.input`.
+- **Badges**: `.badge-primary`.
 
-```html
-<div class="big">Big container with fixed width and height.</div>
+### 4. Typography Presets
+- `.modern`: Default Inter sans-serif.
+- `.traditional`: Elegant Serif.
+- `.gothic`: Bold Sans-serif.
+- `.typescripter`: JetBrains Mono.
 
-<div class="flex">
-  <div class="flexbox">
-  </div>
-</div>
+### 5. Utility Classes
+- **Margins**: `.mt-1`, `.mt-2`, `.mb-1`, `.mb-2`, `.m-0`.
+- **Padding**: `.p-0`.
+- **Sizing**: `.w-100`.
+
+## Customization
+Override the CSS variables to match your brand:
+```css
+:root {
+    --accent-color: #6366f1;
+    --radius: 8px;
+}
 ```
-End.
+
+## Development Roadmap
+- [ ] Modal system (CSS only).
+- [ ] Tooltips and Popovers.
+- [ ] Navigation dropdowns.
+- [ ] Skeleton loading states.
+
