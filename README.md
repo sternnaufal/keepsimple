@@ -57,3 +57,8 @@ Override the CSS variables to match your brand:
 - [ ] Navigation dropdowns.
 - [ ] Skeleton loading states.
 
+
+
+---
+
+Dibuat oleh [Naufal Rakha Putra](https://www.naufalrakha.my.id) — lihat [case study](https://www.naufalrakha.my.id/case-study/keepsimple) dan proyek lainnya di [naufalrakha.my.id](https://www.naufalrakha.my.id)
